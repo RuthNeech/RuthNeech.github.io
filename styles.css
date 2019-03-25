@@ -65,14 +65,21 @@ a:hover {
   background-image: url("./images/icons/social-media/facebook.svg");
 }
 
-nav {
+.nav {
   position: fixed;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav:before {
-  content: 'Ruth Neech';
-  position: absolute;
+.nav__logo {
   color: white;
   font-size: 2em;
   font-weight: 300;
@@ -80,7 +87,7 @@ nav:before {
   padding: 1rem 2rem;
 }
 
-nav .nav {
+.nav__menu {
   padding: 1rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,12 +97,12 @@ nav .nav {
           justify-content: flex-end;
 }
 
-nav .nav a {
+.nav__menu a {
   color: white;
   padding: .95rem 1.225rem;
 }
 
-nav .nav .cta {
+.nav__menu__cta {
   margin-left: 1rem;
   border: 2px solid white;
   border-radius: 4px;
@@ -103,12 +110,13 @@ nav .nav .cta {
   transition: .1s all ease-out;
 }
 
-nav .nav .cta:hover {
+.nav__menu__cta:hover {
   color: #ff5252;
   background-color: white;
 }
 
-nav .nav--up {
+.nav--up {
+  color: #ff5252;
   background-color: white;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -116,15 +124,19 @@ nav .nav--up {
   transition: all .1s ease-out;
 }
 
-nav .nav--up a {
+.nav--up .nav__logo {
   color: #ff5252;
 }
 
-nav .nav--up .cta {
+.nav--up .nav__menu a {
+  color: #ff5252;
+}
+
+.nav--up .nav__menu__cta {
   border: 2px solid #ff5252;
 }
 
-nav .nav--down {
+.nav--down {
   background-color: none;
 }
 
@@ -193,11 +205,21 @@ nav .nav--down {
   content: open-quote;
   position: absolute;
   font-size: 2em;
-  line-height: 0;
+  line-height: .25;
 }
 
 .hero__subtitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.hero__author {
   margin-bottom: 0;
+}
+
+.hero__role {
+  margin-top: 0;
+  opacity: .7;
 }
 
 .section {
@@ -234,8 +256,13 @@ nav .nav--down {
   width: 70%;
 }
 
-.article {
+.story {
   margin-bottom: 3rem;
+  padding: 2rem;
+  border: 1px solid #dfdfdf;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 /* Typography */
@@ -256,6 +283,12 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.618em;
   line-height: 1.25em;
+}
+
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 p {

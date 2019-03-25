@@ -1,0 +1,22 @@
+{
+  "name": "Ruth Neech",
+  "short_name": "Ruth",
+  "description": "People & Culture Manager",
+  "start_url": "./",
+  "background_color": "#ffffff",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./images/icons/icons-192.png",
+      "type": "image/icons/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icons/icons-512.png",
+      "type": "image/icons/png",
+      "sizes": "512x512"
+    }
+  ]
+}

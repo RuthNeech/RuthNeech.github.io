@@ -1,57 +1,269 @@
+/* https://type-scale.com Styles */
 html, body {
-	height: 100%;
+  height: 100%;
   width: 100%;
   margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	position: relative;
-	-webkit-overflow-scrolling: touch;
-	overflow: auto;
-	overflow-y: scroll;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  color: #444;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 a {
-  color: black;
+  color: #ff5252;
   text-decoration: none;
-  transition: all .1s ease-out;
 }
 
 a:hover {
-  border-bottom: 1px solid black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link--social-media {
+  padding-left: 2.5rem;
+  line-height: 3;
+  background-size: 20px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.link--social-media--linkedin {
+  background-image: url("./images/icons/social-media/linkedin.svg");
+}
+
+.link--social-media--twitter {
+  background-image: url("./images/icons/social-media/twitter.svg");
+}
+
+.link--social-media--business-chicks {
+  background-image: url("./images/icons/social-media/business-chicks-icon.png");
+}
+
+.link--social-media--instagram {
+  background-image: url("./images/icons/social-media/instagram.svg");
+}
+
+.link--social-media--facebook {
+  background-image: url("./images/icons/social-media/facebook.svg");
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav:before {
+  content: 'Ruth Neech';
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: 'Bad Script', cursive;
+  padding: 1rem 2rem;
+}
+
+nav .nav {
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav a {
+  color: white;
+  padding: .95rem 1.225rem;
+}
+
+nav .nav .cta {
+  margin-left: 1rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  -webkit-transition: .1s all ease-out;
+  transition: .1s all ease-out;
+}
+
+nav .nav .cta:hover {
+  color: #ff5252;
+  background-color: white;
+}
+
+nav .nav--up {
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+nav .nav--up a {
+  color: #ff5252;
+}
+
+nav .nav--up .cta {
+  border: 2px solid #ff5252;
+}
+
+nav .nav--down {
+  background-color: none;
 }
 
 .hero {
-  height: 80%;
-  width: 100%;
-  background-image: url(./images/ruth-neech.jpg);
+  color: white;
+  background-image: url(./images/hero/ruth-neech-v1-bg.jpg);
   background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-h1 {
+.hero__content {
+  max-width: 1200px;
+  margin: 3rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__image {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero__image__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__image__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero__text {
+  padding: 4rem;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__title {
   margin-top: 0;
 }
 
-ul {
-  margin: 4rem 0;
+.hero__title:before {
+  content: open-quote;
+  position: absolute;
+  font-size: 2em;
+  line-height: 0;
 }
 
-ul li {
-  padding: 1rem 0;
+.hero__subtitle {
+  margin-bottom: 0;
 }
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.section__aside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__aside__title {
+  color: #ff5252;
+  margin-top: 0;
+}
+
+.section__aside__link {
+  padding: .25rem 0;
+}
+
+.section__main {
+  width: 70%;
+}
+
+.article {
+  margin-bottom: 3rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-size: 4.236em;
+  line-height: 1.25em;
+}
+
+h2, .h2 {
+  font-size: 2.618em;
+  line-height: 1.25em;
+}
+
+h3, .h3 {
+  font-size: 1.618em;
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+em {
+  line-height: 2em;
+}
+/*# sourceMappingURL=styles.css.map */

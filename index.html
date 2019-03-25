@@ -5,20 +5,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ruth Neech | People &amp; Culture Manager</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Quicksand:400,500" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 
-  <div class="hero">
+  <nav>
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#articles">Articles</a>
+      <a href="#talks">Talks</a>
+      <a href="#" class="cta">Follow Me</a>
+    </div>
+  </nav>
 
+  <section class="hero">
     <div class="hero__content">
 
-      <h1>"I believe resilience is for everyone."</h1>
+      <div class="hero__image">
+        <div class="hero__image__img">
+          <img src="./images/hero/ruth-neech-v1.jpg" alt="Ruth Neech">
+        </div>
+      </div>
 
+      <div class="hero__text">
+        <div class="hero__text__content">
+          <!-- <h1 class="h1 hero__title">I believe resilience is for everyone.</h1> -->
+          <h1 class="h1 hero__title">I believe everyone can be resilient.</h1>
+          <h2 class="h3 hero__subtitle">Through thoughts, actions and beliefs be able to overcome emotional obstacles within the software industry.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+
+    <div class="section__aside">
+      <h2 class="section__aside__title">About</h2>
+      <a href="https://www.linkedin.com/in/ruth-neech-98902093" class="link--social-media link--social-media--linkedin" target="_blank">Linkedin</a>
+      <a href="#" class="link--social-media link--social-media--twitter">Twitter</a>
+      <a href="#" class="link--social-media link--social-media--business-chicks">Business Chicks</a>
+      <a href="#" class="link--social-media link--social-media--instagram">Instagram</a>
+      <a href="#" class="link--social-media link--social-media--facebook">Facebook</a>
     </div>
 
-  </div>
+    <div class="section__main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+      <p style="display:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+      <a href="#" class="button--more-less"><div class="button--more-less__text">Read more</div></a>
+    </div>
+
+  </section>
+
+  <section id="articles" class="section">
+
+      <div class="section__aside">
+        <h2 class="section__aside__title">Articles</h2>
+      </div>
+  
+      <div class="section__main">
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+      </div>
+  
+  </section>
+
+  <section id="talks" class="section">
+
+      <div class="section__aside">
+        <h2 class="section__aside__title">Talks</h2>
+      </div>
+  
+      <div class="section__main">
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+
+        <div class="article">
+          <div class="h3 article__title">Article title</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus, quis ultrices mi. Ut ut leo scelerisque, suscipit tellus non, dapibus diam. Curabitur tempus dolor id eros semper, vel lobortis risus maximus.</p>
+          <a href="#">Read more</a>
+        </div>
+
+      </div>
+  
+  </section>
   
 </body>
+
 </html>
+
+<script>
+
+  /* Nav - Up / Down */
+  window.onload = function(){ 
+    $("body").scroll(function() {
+      var $height = $("body").scrollTop();
+      if($height > 0) {
+        $('.nav').removeClass('nav--down');
+        $('.nav').addClass('nav--up');
+      } else {
+        $('.nav').removeClass('nav--up');
+        $('.nav').addClass('nav--down');
+      }
+    });
+  };
+
+  /* More / Less */
+  var acc = document.getElementsByClassName("button--more-less");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+      this.classList.toggle("button--more-less--active");
+      var panel = this.previousElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        acc.value == "off";
+      } else {
+        panel.style.display = "block";
+      }
+    }
+  }
+
+  $(".button--more-less__text").click(function(){
+    $(this).text(function(i, v){
+       return v === 'Learn more' ? 'Read less' : 'Read more';
+    });
+  });
+
+</script>
+
+</script>

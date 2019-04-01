@@ -229,6 +229,10 @@ a:hover {
   margin-right: 1.5rem;
 }
 
+.hero__author__logo img {
+  width: 100%;
+}
+
 .hero__author__name {
   margin-bottom: 0;
 }

@@ -37,7 +37,7 @@
       <div class="hero__text">
         <div class="hero__text__content">
           <h1 class="h1 hero__title">The power of resilience</h1>
-          <h2 class="h3 hero__subtitle">Addressing the unique challenges faced by people working in the technology industry.</h2>
+          <h2 class="h2 hero__subtitle">Addressing the unique challenges faced by people working in the technology industry.</h2>
 
           <div class="hero__author">
 
@@ -85,19 +85,18 @@
   </section>
 
   <!-- Articles -->
-  <section id="articles" class="section">
+  <section id="articles" class="section section--column">
 
-      <div class="section__aside">
-        <h2 class="section__aside__title">Articles</h2>
-      </div>
-  
-      <div class="section__main">
+    <h2 class="section__title">Articles</h2>
 
-          <div class="h3 article__title">The Netflix Culture is Not For Everyone</div>
+      <article class="article">
+        <div class="article__image" style="background-image: url('./images/articles/netflix-culture.jpg')"></div>
+        <div class="article__text">
+          <h2>The Netflix Culture is Not For Everyone</h2>
           <p>When I joined Bilue as our dedicated People & Culture Manager, I wasn’t entirely sure what was in store for me. I excitedly told my nearest and dearest about the appointment and they responded ‘ahhh…HR’. I was quick to learn that it is so much more than this.</p>
           <a href="https://medium.com/@ruthneech_23112/the-netflix-culture-is-not-for-everyone-e6f88b4ceb31" target="_blank">Read more</a>
-
-      </div>
+        </div>
+      </article>
   
   </section>
 
@@ -121,7 +120,7 @@
       <article class="article">
         <div class="article__image" style="background-image: url('./images/talks/Women-Techmakers__The-impact-of-the-individual-on-workplace-culture.jpg')"></div>
         <div class="article__text">
-          <img src="./images/logos/Women-Techmakers-logo.png" alt="Women Techmakers" width="300">
+          <img class="article__text__logo" src="./images/logos/Women-Techmakers-logo.png" alt="Women Techmakers">
           <p>Google's Women Techmakers program provides visibility, community, and resources for women in technology.</p>
           <a href="https://www.womentechmakers.com" target="_blank">Read more</a>
           <hr>
@@ -131,6 +130,10 @@
       </article>
   
   </section>
+
+  <footer>
+    <p>All Rights Reserved. Ruth Neech.</p>
+  </footer>
   
 </body>
 
@@ -174,7 +177,5 @@
        return v === 'Learn more' ? 'Read less' : 'Read more';
     });
   });
-
-</script>
 
 </script>

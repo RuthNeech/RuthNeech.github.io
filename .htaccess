@@ -1,0 +1,16 @@
+Redirect 302 / https://ruthneech.com/
+
+# BEGIN EXPIRES
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+    ExpiresByType text/css "access plus 0 seconds"
+    ExpiresByType text/plain "access plus 0 seconds"
+    ExpiresByType image/gif "access plus 0 seconds"
+    ExpiresByType image/png "access plus 0 seconds"
+    ExpiresByType image/jpeg "access plus 0 seconds"
+    ExpiresByType application/x-javascript "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+    ExpiresByType application/x-icon "access plus 0 seconds"
+</IfModule>
+# END EXPIRES
